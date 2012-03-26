@@ -15,14 +15,14 @@ Requirements
 Attributes
 ==========
 
-* `node[:vim][:extra_packages]` - An array of extra packages related to vim to install (like plugins). Empty array by default.
+* `node['vim']['extra_packages']` - An array of extra packages related to vim to install (like plugins). Empty array by default.
 
 Usage
 =====
 
 Put `recipe[vim]` in a run list, or `include_recipe 'vim'` to ensure that vim is installed on your systems.
 
-If you would like to install additional vim plugin packages, include their package names in the `node[:vim][:extra_packages]` attribute. Verify that your operating sytem has the package available.
+If you would like to install additional vim plugin packages, include their package names in the `node['vim']['extra_packages']` attribute. Verify that your operating sytem has the package available.
 
 License and Author
 ==================
