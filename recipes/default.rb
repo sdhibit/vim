@@ -21,13 +21,13 @@
 # * vim-minimal gives you /bin/vi
 # * vim-enhanced gives you /usr/bin/vim
 vim_base_pkgs = value_for_platform(
-  ["ubuntu", "debian", "arch"] => { "default" => "vim" },
+  ["ubuntu", "debian", "arch"] => { "default" => ["vim"] },
   ["redhat", "centos", "fedora", "scientific"] => { "default" => ["vim-minimal","vim-enhanced"] },
-  ["freebsd"] => { "default" => "vim-lite"},
+  ["freebsd"] => { "default" => ["vim-lite"]},
   "default" => ["vim"]
 )
 
-*vim_base_pkgs.each do |vim_base_pkg|
+vim_base_pkgs.each do |vim_base_pkg|
   package vim_base_pkg
 end
 
