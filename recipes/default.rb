@@ -23,6 +23,7 @@
 vim_base_pkgs = value_for_platform(
   ["ubuntu", "debian", "arch"] => { "default" => ["vim"] },
   ["redhat", "centos", "fedora", "scientific"] => { "default" => ["vim-minimal","vim-enhanced"] },
+  ["freebsd"] => { "default" => "vim-lite"},
   "default" => ["vim"]
 )
 
@@ -33,3 +34,4 @@ end
 node[:vim][:extra_packages].each do |vimpkg|
   package vimpkg
 end
+

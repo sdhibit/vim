@@ -6,7 +6,7 @@ description      "Installs vim and optional extra packages."
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.0.2"
 
-%w{debian ubuntu arch redhat centos fedora scientific}.each do |os|
+%w{debian ubuntu arch redhat centos fedora scientific freebsd}.each do |os|
   supports os
 end
 

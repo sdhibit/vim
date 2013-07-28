@@ -11,6 +11,7 @@ Requirements
 * Ubuntu/Debian
 * Red Hat/CentOS/Fedora/Scientific
 * ArchLinux
+* FreeBSD
 
 Attributes
 ==========
